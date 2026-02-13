@@ -28,8 +28,16 @@ noButton.addEventListener("click", function () {
 
 function handleYesClick() {
   titleElement.innerHTML = "Yayyy!! :3";
+
   buttonsContainer.classList.add("hidden");
   changeImage("yes");
+
+  // Create big love message
+  const loveMessage = document.createElement("h1");
+  loveMessage.textContent = "I LOVE YOU ❤️";
+  loveMessage.classList.add("big-love");
+
+  document.querySelector(".container").appendChild(loveMessage);
 }
 
 function resizeYesButton() {
